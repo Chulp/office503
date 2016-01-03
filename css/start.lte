@@ -1,0 +1,36 @@
+{% include('header.lte') %}
+{% autoescape false %}
+</head>
+<body>
+<div id="site">
+  <div id="header">
+  	<div id="header_resize">
+      <div id="headlang">[[gsm_language]]</div>
+      <div id="clr"></div>
+      <div id="logo"></div>
+      <div id="menu"><ul>{{ mainmenu }}</ul></div>
+      <div id="clr"></div>
+      <div id="headill[[Gsm_rand]]"></div>
+    </div> <!-- end resize -->
+  </div>	<!-- end header -->
+			<div class="body">
+				<div class="body_resize">
+					<div class="lb">
+						<div id="crumbs">{{ crumbstart }}{{ crumbs }}</div>	  
+            <h2>{{page_title}}</h2>
+            {{content1}}
+					</div>
+					<div class="rb">
+            <ul>{{ sidemenu }}</ul>
+            [[Gsm_side]]
+            {{content2}}
+            		<!-- OPTIONAL: display frontend search <div id="search">[[LEPTON_SearchBo]]</div> -->
+                <!-- OPTIONAL: display frontend login <div id="login">[[LoginBox]]</div> -->
+                <!-- <div id="frontedit">[[editthispage]]</div> -->
+                <!-- <div id="anynews">{{ news }}</div> -->
+					</div>
+				<div class="clr"></div>
+			</div>
+		</div>
+{% endautoescape %}
+{% include('footer.lte') %}   

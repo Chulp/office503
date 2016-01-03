@@ -1,0 +1,32 @@
+{% include('header.lte') %}
+{% autoescape false %}
+</head>
+<body>
+<div id="site">
+  <div id="header">
+    <div id="header_resize">
+      <div id="headlang">[[gsm_language]]</div>
+      <div id="clr"></div>
+      <div id="logo"></div>
+      <div id="menu"><ul>{{ mainmenu }}</ul></div>
+      <div id="clr"></div>
+      <div id="headill[[Gsm_rand?para=4]]"></div>
+    </div> <!-- end resize -->
+  </div> <!-- end header -->
+  <div id="body">
+    <div id="body_resize">
+      <div id="lb">
+        <div id="crumbs">{{ crumbstart }}{{ crumbs }}</div>	  
+           <h2>{{page_title}}</h2>
+           {{content1}}
+        </div>
+      <div id="rb">
+        <ul>{{ sidemenu }}</ul>
+        [[Gsm_side]]
+        {{content2}}
+      </div>
+    <div id="clr"></div>
+  </div>
+</div>
+{% endautoescape %}
+{% include('footer.lte') %}  

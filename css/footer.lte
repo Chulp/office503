@@ -1,0 +1,32 @@
+{% autoescape false %}
+    <div id="trailer">
+      <div id="trailer_resize">
+        <div id="blok">
+          {{ foottext }}
+        </div>
+        <div id="blok">
+          <h2>Links</h2>
+            <ul>{{ bottommenu }} </ul>
+        </div>
+        <div id="blok"> 
+          {{ contact }} 
+          <div id="clr"></div>
+          {{ done }}
+        </div>
+        <div id="clr"></div>
+      </div> <!-- end resize -->
+    </div>
+    <div id="footer">
+      <div id="bron" > 
+         Bron : {{ footer }} 
+      </div>
+      <div id="footer_resize">
+        <p id="lf">{{ footer }}</p>
+        <p id="rf">{{ power }} &nbsp; </p>
+        <div id="clr"></div>
+      </div> <!-- end resize -->
+    </div>
+  </div>
+  </body>
+{% endautoescape %}
+</html>

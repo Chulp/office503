@@ -1,0 +1,75 @@
+/**
+ *  @template       LEPTON-Start
+ *  @version        see info.php of this template
+ *  @author         cms-lab
+ *  @copyright      2010-2014 CMS-LAB
+ *  @license        http://creativecommons.org/licenses/by/3.0/
+ *  @license terms  see info.php of this template
+ *  @platform       see info.php of this template
+ */
+ 
+/* custom frontend.css for form module */ 
+.required {
+	color: #FF0000;
+	color:	red;
+}
+.field_title {
+    padding-top: 2px;
+    text-align: right;
+    vertical-align: top;
+    width: 100px;
+}
+.textfield {
+	width: 300px;
+}
+.textarea {
+    margin-bottom: 10px;
+    margin-left: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-top: 2px;
+    width: 300px;
+	height: 150px;
+}
+.field_heading {
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+	padding-top: 10px;
+	color: #666666;
+}
+.select {
+	font-size: 12px;
+}
+.checkbox_label {
+	font-size: 11px;
+	cursor: pointer;
+}
+.radio_label {
+	font-size: 11px;
+	cursor: pointer;
+}
+.email {
+	width: 300px;
+}
+/*** Don't remove the class nixhier, this is required for ASP ***/
+.nixhier {
+	display:none;
+}
+.textfield, .email {
+    border: 1px solid #b2b2b2;
+    height: 16px;
+    margin-bottom: 10px;
+    margin-left: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-top: 2px;
+    }
+
+form input[type='submit'] { margin-top:14px;margin-left:0px;margin-bottom:14px; } 
+
+.captcha_expl {padding-left:10px;} 
+.text_captcha {padding-left:10px;} 
+
