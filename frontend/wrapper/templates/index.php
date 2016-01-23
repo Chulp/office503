@@ -1,7 +1,7 @@
 <?php
 
 /**
- *  @template       LEPTON-Start
+ *  @template       spacious
  *  @version        see info.php of this template
  *  @author         cms-lab
  *  @copyright      2010-2014 CMS-LAB
@@ -35,5 +35,7 @@ else
     }
 }
 // end include class.secure.php
+
+
 
 ?>

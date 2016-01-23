@@ -1,36 +1,49 @@
 {% include('header.lte') %}
 {% autoescape false %}
 </head>
-<body>
-<div id="site">
-  <div id="header">
-  	<div id="header_resize">
-      <div id="headlang">[[gsm_language]]</div>
-      <div id="clr"></div>
-      <div id="logo"></div>
-      <div id="menu"><ul>{{ mainmenu }}</ul></div>
-      <div id="clr"></div>
-      <div id="headill[[Gsm_rand]]"></div>
-    </div> <!-- end resize -->
-  </div>	<!-- end header -->
-			<div class="body">
-				<div class="body_resize">
-					<div class="lb">
-						<div id="crumbs">{{ crumbstart }}{{ crumbs }}</div>	  
-            <h2>{{page_title}}</h2>
-            {{content1}}
-					</div>
-					<div class="rb">
-            <ul>{{ sidemenu }}</ul>
-            [[Gsm_side]]
-            {{content2}}
-            		<!-- OPTIONAL: display frontend search <div id="search">[[LEPTON_SearchBo]]</div> -->
-                <!-- OPTIONAL: display frontend login <div id="login">[[LoginBox]]</div> -->
-                <!-- <div id="frontedit">[[editthispage]]</div> -->
-                <!-- <div id="anynews">{{ news }}</div> -->
-					</div>
-				<div class="clr"></div>
-			</div>
-		</div>
+<body class="home page page-template page-template-page-templatesbusiness-php custom-background ">
+  <div id="page" class="hfeed site">
+    <header id="masthead" class="site-header clearfix">
+      <div id="header-text-nav-container">
+        <div class="inner-wrap">
+          <div id="header-text-nav-wrap" class="clearfix">
+            <div id="header-left-section">
+              <div id="header-logo-image">{{ logo }}</div><!-- #header-logo-image -->          
+              <div id="header-text">
+                <h1 id="site-title">{{ my_name }}</h1>
+                <h2 id="site-description">{{ lep_header }}</h2><!-- #site-description -->
+              </div><!-- #header-text -->
+            </div><!-- #header-left-section -->
+            <div id="header-right-section">
+              <div id="header-right-sidebar" class="clearfix">
+                <aside id="multi-3" class="widget widget_multi">[[gsm_language]]<!-- searchform -->
+                </aside>    
+              </div>
+              <nav id="site-navigation" class="main-navigation" role="navigation">
+                <h3 class="menu-toggle">{{ menu_name }}</h3>
+                <div class="menu-primary-container">{{ navimain }}</div>            
+              </nav>        
+            </div><!-- #header-right-section --> 
+          </div><!-- #header-text-nav-wrap -->
+        </div><!-- .inner-wrap -->
+      </div><!-- #header-text-nav-container -->   
+      <section id="featured-slider">{{ content0 }}</section>
+    </header>
+    <div id="main" class="clearfix">  
+      <div class="inner-wrap">
+        <div id="content" class="clearfix">
+          <section id="spacious_service_widget-2" class="widget widget_service_block clearfix">{{ content1 }}</section>            
+          <div class="clearfix"></div>
+          <div class="tg-one-half">
+            <section id="spacious_featured_single_page_widget-2" class="widget widget_featured_single_post clearfix">{{ content3 }}</section>    
+          </div>
+          <div class="tg-one-half tg-one-half-last">
+            <section id="spacious_testimonial_widget-2" class="widget widget_testimonial clearfix">{{ content4 }}</section>
+          </div>
+          <div class="clearfix"></div>
+          <section id="spacious_recent_work_widget-2" class="widget widget_recent_work clearfix">{{ content5 }}</section>
+        </div><!-- content -->
+      </div><!-- .inner-wrap -->
+    </div><!-- #main -->  
 {% endautoescape %}
-{% include('footer.lte') %}   
+{{ include('footer.lte') }}

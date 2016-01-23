@@ -1,15 +1,12 @@
 <?php
-
-/**
- *  @template       spacious
- *  @version        see info.php of this template
- *  @author         cms-lab
- *  @copyright      2010-2014 CMS-LAB
- *  @license        http://creativecommons.org/licenses/by/3.0/
- *  @license terms  see info.php of this template
- *  @platform       see info.php of this template
+/*
+ *  @template   Office503 using twig
+ *  @version  see info.php of this template
+ *  @author   Gerard Smelt
+ *  @copyright  2010-2016 Contracthulp B.V.
+ *  @license  see info.php of this template
+ *  @platform  see info.php of this template
  */
-
 // include class.secure.php to protect this file and the whole CMS!
 if ( defined( 'LEPTON_PATH' ) )
 {
@@ -36,6 +33,7 @@ else
 }
 // end include class.secure.php
 
-
+// Checking Requirements
+$PRECHECK['LEPTON_VERSION'] = array('VERSION' => '2.1.0', 'OPERATOR' => '>=');
 
 ?>

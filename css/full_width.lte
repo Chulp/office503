@@ -1,0 +1,64 @@
+{% include('header.lte') %}
+{% autoescape false %}
+</head>
+<body class="page page-child page-template-default custom-background no-sidebar-full-width ">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header clearfix">
+			<div id="header-text-nav-container">
+				<div class="inner-wrap">
+					<div id="header-text-nav-wrap" class="clearfix">
+					
+						<div id="header-left-section">
+							<div id="header-logo-image">{{ logo }}</div><!-- #header-logo-image -->					
+							<div id="header-text">
+								<h1 id="site-title">{{ my_name }}</h1>
+								<h2 id="site-description">{{ lep_header }}</h2><!-- #site-description -->
+							</div><!-- #header-text -->
+						</div><!-- #header-left-section -->
+						
+						<div id="header-right-section">
+							<div id="header-right-sidebar" class="clearfix">
+                <aside id="multi-3" class="widget widget_multi">[[gsm_language]]<!-- searchform -->
+                </aside>   		
+							</div>
+							
+							<nav id="site-navigation" class="main-navigation" role="navigation">
+								<h3 class="menu-toggle">{{ menu_name }}</h3>
+								<div class="menu-primary-container">{{ navimain }}</div>						
+							</nav>				
+						</div><!-- #header-right-section --> 
+			    	
+					</div><!-- #header-text-nav-wrap -->
+				</div><!-- .inner-wrap -->
+			</div><!-- #header-text-nav-container -->
+		</header>			
+			<div class="header-post-title-container clearfix">
+				<div class="inner-wrap">
+					<div class="post-title-wrapper">
+					   	<h1 class="header-post-title-class">{{ page_title }}</h1>
+					</div>
+					<div class="breadcrumb">{{ breadcrumb }}</div> <!-- .breadcrumb -->					
+				</div>
+			</div>
+		</header>
+		
+		<div id="main" class="clearfix">
+			<div class="inner-wrap">
+				<div id="primary">
+					<div id="content" class="clearfix">
+						<article class="post page">
+							<div class="entry-content clearfix">{{ content1}}</div>
+							<footer class="entry-meta-bar clearfix">	        			
+								<div class="entry-meta clearfix"></div>
+							</footer>
+						</article>
+						<div id="comments" class="comments-area">
+							<div id="respond" class="comment-respond">{{ content2 }}</div><!-- #respond -->
+						</div><!-- #comments -->
+					</div><!-- #content -->
+				</div><!-- #primary -->
+				
+			</div><!-- .inner-wrap -->
+		</div><!-- #main -->				
+{% endautoescape %}
+{{ include('footer.lte') }}

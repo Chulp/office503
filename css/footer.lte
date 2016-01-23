@@ -1,32 +1,50 @@
 {% autoescape false %}
-    <div id="trailer">
-      <div id="trailer_resize">
-        <div id="blok">
-          {{ foottext }}
-        </div>
-        <div id="blok">
-          <h2>Links</h2>
-            <ul>{{ bottommenu }} </ul>
-        </div>
-        <div id="blok"> 
-          {{ contact }} 
-          <div id="clr"></div>
-          {{ done }}
-        </div>
-        <div id="clr"></div>
-      </div> <!-- end resize -->
-    </div>
-    <div id="footer">
-      <div id="bron" > 
-         Bron : {{ footer }} 
-      </div>
-      <div id="footer_resize">
-        <p id="lf">{{ footer }}</p>
-        <p id="rf">{{ power }} &nbsp; </p>
-        <div id="clr"></div>
-      </div> <!-- end resize -->
-    </div>
-  </div>
-  </body>
+		<footer id="colophon" class="clearfix">	
+			<div class="footer-widgets-wrapper">
+				<div class="inner-wrap">
+					<div class="footer-widgets-area clearfix">
+						<div class="tg-one-fourth tg-column-1">
+							<aside id="text-3" class="widget widget_text">
+								<h3 class="widget-title"><span>{{ footer1 }}</span></h3>			
+								<div class="textwidget">{{ footer1_text }}</div>
+							</aside>
+						</div>
+						<div class="tg-one-fourth tg-column-2">
+							<aside id="rpwe_widget-2" class="widget rpwe_widget recent-posts-extended"><h3 class="widget-title"><span>{{ footer2 }}</span></h3>
+								<div class="textwidget">{{ footer2_text }}</div>
+							</aside>
+						</div>
+						<div class="tg-one-fourth tg-after-two-blocks-clearfix tg-column-3">
+							<aside id="nav_menu-2" class="widget widget_nav_menu">
+								<h3 class="widget-title"><span>{{ footer3 }}</span></h3>
+								<div class="menu-footer-menu-container">{{ navifoot }}</div>
+							</aside>				
+						</div>
+						<div class="tg-one-fourth tg-one-fourth-last tg-column-4">
+							<aside id="text-2" class="widget widget_text">
+								<h3 class="widget-title"><span>{{ footer4 }}</span></h3>			
+								<div class="textwidget">{{ footer4_text }}</div>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-socket-wrapper clearfix">
+				<div class="inner-wrap">
+					<div class="footer-socket-area">
+						<div class="copyright">{{ lep_footer }}</div>						
+						<div class="menu-footer-menu-container">{{ power }}</div>		    			
+					</div>
+				</div>
+			</div>			
+		</footer>
+		<a style="display: none;" href="#masthead" id="scroll-up"></a>	
+	</div><!-- #page -->
+	<div style="display:none"></div>
+{{ cycle }}
+{{ slider }}
+{{ navigation }}	
+</body>
+<!-- end bottom -->
 {% endautoescape %}
 </html>

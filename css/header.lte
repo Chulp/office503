@@ -1,14 +1,19 @@
-{% autoescape false %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- header -->
+{% autoescape false %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<!-- start header -->
 <head>
-<meta http-equiv="content-type" content="text/html; charset={{ DEFAULT_CHARSET }}" />
-<meta name="description" content{{ description }}" />
-<meta name="keywords" content=" {{ keywords }}" />
-<title>{{ page_title }}</title>
-<link rel="shortcut icon" type="image/x-icon" href="{{ TEMPLATE_DIR }}/img/favicon.ico">
-{{ get_page_headers }}
-<link href="{{ TEMPLATE_DIR }}/css/screen.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="{{ TEMPLATE_DIR }}/css/print.css" rel="stylesheet" type="text/css" media="print" />	
+  {{ viewport }}
+  {{ jquery }}
+  {{ migrate }}
+  {{ custom }}	
+  {{ simplepagehead }}
+  {{ get_page_headers }}
+  <link href="{{ TEMPLATE_DIR }}/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{ TEMPLATE_DIR }}/css/print.css" rel="stylesheet" type="text/css" media="print" />
+  {{ meta_ie }}
+  {{ css_ie }}
+  {{ ie6_no }}
+  {{ ie7_no }}	
 <!-- end header -->
 {% endautoescape %}
